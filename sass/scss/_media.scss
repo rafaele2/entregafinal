@@ -1,0 +1,50 @@
+@media (max-width: 380px){
+    body, main, .main1, .headerprincipal, .imagenprincipal .conteiner,.trabajos{
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        align-items: center;
+        justify-content: center;
+        @mixin tamaños ( $ancho, $alto) { 
+            width: $ancho;
+            height: $alto;
+        }
+        img {
+            @include tamaños(150px, 150px)
+        }
+        .imagenprincipal {
+            @include tamaños(200px, 200px)
+        }
+
+
+    }
+    .trabajos{
+        margin-top: 125px;
+    }
+}
+@media (max-width: 600px){
+    .headerprincipal,.imagenprincipal,.conteiner {
+        display: grid;
+        grid-template-areas: 
+        "header header" 
+        "lista lista"
+        "img h2"
+        "img p"
+        ;
+    }
+        .headerprincipal{
+        grid-area: header;
+        }
+        .inicioprincipal{
+        grid-area: lista;
+    }
+        .imagenprincipal{
+        grid-area: img;
+    }
+        h2{
+        grid-area: h2;
+    }
+        p{
+        grid-area: p;
+    }
+}
