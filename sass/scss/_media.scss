@@ -1,4 +1,15 @@
 @media (max-width: 380px){
+    nav{
+        height: 70px;
+    }
+
+    .navbar-collapse{
+        height: auto;
+        background-color: white;
+        border-radius: 1px;
+        border-color: black;
+    }
+
     body, main, .main1, .headerprincipal, .imagenprincipal .conteiner,.trabajos{
         display: flex;
         flex-direction: column;
@@ -16,13 +27,21 @@
             @include tamaños(200px, 200px)
         }
 
-
     }
     .trabajos{
         margin-top: 125px;
     }
 }
 @media (max-width: 600px){
+    nav{
+        height: 70px;
+    }
+    .navbar-collapse{
+        height: auto;
+        background-color: white;
+        border-radius: 1px;
+        border-color: black;
+    }
     .headerprincipal,.imagenprincipal,.conteiner {
         display: grid;
         grid-template-areas: 

@@ -97,6 +97,17 @@ footer {
 }
 
 @media (max-width: 380px) {
+  nav {
+    height: 70px;
+  }
+
+  .navbar-collapse {
+    height: auto;
+    background-color: white;
+    border-radius: 1px;
+    border-color: black;
+  }
+
   body, main, .main1, .headerprincipal, .imagenprincipal .conteiner, .trabajos {
     display: flex;
     flex-direction: column;
@@ -118,6 +129,17 @@ footer {
   }
 }
 @media (max-width: 600px) {
+  nav {
+    height: 70px;
+  }
+
+  .navbar-collapse {
+    height: auto;
+    background-color: white;
+    border-radius: 1px;
+    border-color: black;
+  }
+
   .headerprincipal, .imagenprincipal, .conteiner {
     display: grid;
     grid-template-areas: "header header" "lista lista" "img h2" "img p";
