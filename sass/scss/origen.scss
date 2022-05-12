@@ -33,7 +33,11 @@ body{
         justify-content: center;
         display:grid
            }
+           main{
+               width: 100%;
+           }
     .main1{
+        width: 100%;
         display: grid;
             grid-template-areas: 
             "img h2"
@@ -52,7 +56,6 @@ body{
 #titulo {
     
     color: darkred;
-    margin-left: 25px;
     text-align: center;
     width: 100%;
 }
@@ -64,7 +67,6 @@ li :hover{
     }
 li { 
     content: normal;
-    margin-left: 20px;
 }
 .imagenprincipal{
     height: 250px;

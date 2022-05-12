@@ -34,11 +34,7 @@ body nav {
   justify-content: center;
   display: grid;
 }
-body main {
-  width: 100%;
-}
 body .main1 {
-  width: 100%;
   display: grid;
   grid-template-areas: "img h2" "img p";
 }
