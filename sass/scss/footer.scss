@@ -20,14 +20,6 @@ main{
     @extend .boton;
     background-color: rgb(131, 11, 11);
 }
-@for $bucle from 1 through 6 {
-    .fondo-#{$bucle}{
-        background-color: white;
-    }
-    h#{$bucle}{
-        font-size: 3rem / $bucle;
-    }
-}
 $redes:(
     twitter: green,
     facebook: blue,

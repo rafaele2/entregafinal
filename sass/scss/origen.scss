@@ -7,6 +7,12 @@ body{
     background-color: darkgrey;
     width: 100%;
     min-height: 1000px;
+    #titulo {
+    
+        color: darkred;
+        text-align: center;
+        width: 100%;
+    }
     header{  
         background-color: black;
         border-radius: 5px;
@@ -35,7 +41,12 @@ body{
            }
            main{
                width: 100%;
-           }
+               .imagenprincipal{
+                height: 250px;
+                width: 250px;
+                border-radius: 5px;
+            }          
+           }          
     .main1{
         width: 100%;
         display: grid;
@@ -51,38 +62,16 @@ body{
         p{
             grid-area: p;
         }
-    }         
-}
-#titulo {
-    
-    color: darkred;
-    text-align: center;
-    width: 100%;
-}
-.enlaces {
-    display: inline;
-    } 
-li :hover{
-        box-shadow: 2px 2px black;
-    }
-li { 
-    content: normal;
-}
-.imagenprincipal{
-    height: 250px;
-    width: 250px;
-    border-radius: 5px;
-}
-.trabajos{
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(2,1fr);
-    height: 1000px;
-    
-}
-.modelos{
-    width: 200px;
-}
+    }       
+    .trabajos{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(2,1fr);
+        height: 1000px;
+        .modelos{
+            width: 200px;
+        }   
+    }    
 footer{
     display: flex;
     flex-direction: column;
@@ -91,7 +80,16 @@ footer{
     bottom: 0px;
     margin-top: auto;
 }
+}
+li :hover{
+        box-shadow: 2px 2px black;
+    }
+li { 
+    content: normal;
+}
+
 
 @import "media";
 @import "animaciones";
-@import "demo2";
+@import "footer";
+@import "estilosBootstrap.scss";
