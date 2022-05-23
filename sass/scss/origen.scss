@@ -46,7 +46,10 @@ body{
                 width: 250px;
                 border-radius: 5px;
             }          
-           }          
+           }   
+    article{
+        background-color: black;
+    }
     .main1{
         width: 100%;
         display: grid;
@@ -63,15 +66,9 @@ body{
             grid-area: p;
         }
     }       
-    .trabajos{
-        display: grid;
-        grid-template-columns: repeat(6,1fr);
-        grid-template-rows: repeat(2,1fr);
-        height: 1000px;
         .modelos{
             width: 200px;
-        }   
-    }    
+        }    
 footer{
     display: flex;
     flex-direction: column;

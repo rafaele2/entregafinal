@@ -47,6 +47,9 @@ body main .imagenprincipal {
   width: 250px;
   border-radius: 5px;
 }
+body article {
+  background-color: black;
+}
 body .main1 {
   width: 100%;
   display: grid;
@@ -61,13 +64,7 @@ body .main1 h2 {
 body .main1 p {
   grid-area: p;
 }
-body .trabajos {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  height: 1000px;
-}
-body .trabajos .modelos {
+body .modelos {
   width: 200px;
 }
 body footer {
@@ -243,6 +240,20 @@ main section {
   text-align: center;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
 }
 
 /*# sourceMappingURL=destino.css.map */
