@@ -18,7 +18,6 @@
     </header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -32,10 +31,22 @@
                   Desplegable
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li class="enlaces"><a href="nuestros-productos.html">Nuestros Trabajos</a></li>
-                    <li class="enlaces"><a href="presupuestos.html">Presupuestos</a></li>
-                    <li class="enlaces"><a href="servicio-tecnico.html">Servicio Tecnico</a></li>
-                    <li class="enlaces"><a href="contacto.html">Contacto</a></li>
+                  <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="nuestros-productos.html">
+                    <span class="d-inline-block bg-success rounded-circle p-1"></span>
+                    Nuestros Trabajos
+                  </a></li>
+                  <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="presupuestos.html">
+                    <span class="d-inline-block bg-primary rounded-circle p-1"></span>
+                    Presupuestos
+                  </a></li>
+                  <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="servicio-tecnico.html">
+                    <span class="d-inline-block bg-danger rounded-circle p-1"></span>
+                    Servicio Tecnico
+                  </a></li>
+                  <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="contacto.html">
+                    <span class="d-inline-block bg-info rounded-circle p-1"></span>
+                    Contacto
+                  </a></li>
                 </ul>
             </ul>
             <form class="d-flex">
@@ -46,33 +57,141 @@
         </div>
       </nav>
 
-    <main>
-        
-        <table>  
-            <tr>  
-              <td>MANTENIMIENTO DE HARWARE</td>   
-              <td>PRECIO</td>   
-              <td>TIEMPO ESTIMADO</td>  
-            </tr>
-            <tr>
-              <td>MANTENIMIENTO DE SOFWARE</td>   
-              <td>PRECIO</td>   
-              <td>TIEMPO ESTIMADO</td>  
-            </tr>
-          </table>
-          <H1>REPARACION DE PC</H1>
-          <H2>DESCRIBE TU PROBLEMA Y TE CONTACTAREMOS PARA UNA ATENCION PERSONALIZADA</H2>
-          
-            <h3>Comentarios</h3>
-            <textarea comentario="" id="" cols="30" rows="10"></textarea>
-            <form>
-                <h2>Correo electrónico</h2>
-                    <label for="correo_electronico"></label>	
-                    <input type="text" name="correo_electronico" />
+  <div class="container py-3">
+        <article>
+          <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center text-dark text-decoration-none"></a>
+            
+          <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+            <h1 class="display-4 fw-normal">Servicio Técnico</h1>
+            <p class="fs-5 text-muted"> A continuación verás la gama de servicos que ofrecemos para que tu PC se encuentre siempre optima, alargando su vida util y actaundod e forma prteventiva para cuidar tus componentes</p>
+          </div>
+        </article>
+
+  <main>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Mantenimiento Hardware (componentes fisicos)
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">      
+              <table class="table table-dark table-borderless">
+                <thead>
+                  <tr>
+                    <th scope="col">N°</th>
+                    <th scope="col">Tipo de servicio</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Tiemmpo estimado</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Limpieza PC</td>
+                    <td>$1000</td>
+                    <td>1 hora</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Cableado</td>
+                    <td>$1800</td>
+                    <td>1 Hora 30m Minutos</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Testeo de Fuente y voltajes </td>
+                    <td>$2000</td>
+                    <td>2 Horas</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Mantenimiento Software (toodo lo relacionado a programas)
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <table class="table table-dark table-borderless">
+                <thead>
+                  <tr>
+                    <th scope="col">N°</th>
+                    <th scope="col">Tipo de servicio</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Tiemmpo estimado</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Instalación Sistema Operativo</td>
+                    <td>$1500</td>
+                    <td>1 hora</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Limpieza se Virus y prevencion de malwares</td>
+                    <td>$2000</td>
+                    <td>3 horas</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Copias de seguridad + mantenimiento de discos</td>
+                    <td>$3000</td>
+                    <td>Varia según volumen de información.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Servicio Tecnico y reparación
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Describe tu problema y te contactaremos para una atención personalizada</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
             </form>
         <form>
             <input type="submit" value="Enviar"/>   
         </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      
+
+
+
+
+
+      
+
+
+
+
+
+          
     </main>
 
     <footer>
@@ -84,6 +203,7 @@
         </div>
         
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
