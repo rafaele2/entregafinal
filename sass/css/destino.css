@@ -184,14 +184,7 @@ li {
     border-width: 10px;
   }
 }
-main {
-  width: 1440px;
-}
-main section {
-  width: 300px;
-}
-
-.boton, .boton--nuevo {
+.boton {
   width: 200px;
   height: 50px;
   background-color: white;
@@ -201,8 +194,19 @@ main section {
   border: 1px solid black;
 }
 
-.boton--nuevo {
-  background-color: rgb(131, 11, 11);
+.boton-twitter {
+  background-color: green;
+  border: green;
+}
+
+.boton-facebook {
+  background-color: blue;
+  border: blue;
+}
+
+.boton-instagram {
+  background-color: yellow;
+  border: yellow;
 }
 
 .b-example-divider {

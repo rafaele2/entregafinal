@@ -1,11 +1,4 @@
-$anchura: 720px;
-main{
 
-    width: $anchura * 2;
-    section{
-        width: ($anchura / 2) - 60;
-    }
-}
 
 .boton {
     width: 200px;
@@ -16,13 +9,16 @@ main{
     border-radius: 20px;
     border: 1px solid black;
 }
-.boton--nuevo{
-    @extend .boton;
-    background-color: rgb(131, 11, 11);
-}
+
 $redes:(
     twitter: green,
     facebook: blue,
     instagram: yellow,
 );
-//*hacer un maps con each para las redes en el footer hora 2:00:00 clase sassII //
+
+@each $nombres, $colores in $redes{
+    .boton-#{$nombres} {
+        background-color: $colores;
+        border: $colores;
+    }
+}
